@@ -1,0 +1,8 @@
+# Load the boston dataset from sklearn.datasets ::
+from sklearn.datasets import load_boston 
+boston_data = load_boston()
+# Enter the boston data into a dataframe
+boston_df = pd.DataFrame(boston_data.data, columns=boston_data.feature_names)
+
+# importing flight dataset ::
+flights_long=sns.load_dataset("flights")   
